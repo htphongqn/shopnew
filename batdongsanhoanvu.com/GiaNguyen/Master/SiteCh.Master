@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteCh.Master.cs" Inherits="CatTrang.Master.SiteCh" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register src="~/UIs/header_ch.ascx" tagname="header" tagprefix="uc1" %>
+<%@ Register src="~/UIs/menutop_ch.ascx" tagname="menutop" tagprefix="uc2" %>
+<%@ Register src="~/UIs/footer_ch.ascx" tagname="footer" tagprefix="uc3" %>
+<%@ Register src="~/UIs/carousel_ch.ascx" tagname="carousel" tagprefix="uc4" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Diamond Bay City</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../Styles/skeleton.css" type="text/css" />
+    <link rel="stylesheet" href="../Styles/template_hotel.css" type="text/css" />
+    <script type="text/javascript" src="../Scripts/jquery-1.8.3.min.js"></script>
+    <!---Hoz menu-->
+    <link href="../Styles/nav_menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--#begin Container-->
+    <div class="container" id="top_page">
+      <!--#begin Header-->
+      <uc1:header ID="header1" runat="server" />
+      <!--#end Header-->
+      <uc2:menutop ID="menutop1" runat="server" />
+      </div>
+    </div>
+    <!-- End Container-->
+    <!--Main-->
+    <div id="main" class="subpage">
+      <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--Carousel Assets -->
+        <uc4:carousel ID="carousel1" runat="server" />
+        <!--end Carousel Assets-->
+        <!-- Begin of footer-->
+        <uc3:footer ID="footer1" runat="server" />
+        <!-- End of footer-->
+      </div>
+      <!-- End Container-->
+    </div>
+    <!--end Main-->
+    <!-- back to top -->
+    <script type="text/javascript" src="../Scripts/scrolltopcontrol.js"></script>
+    <script type="text/javascript" language="javascript" src="../Scripts/jquery.carouFredSel.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="../Scripts/all_scripts.js"></script>
+    <div id="toTop"></div>
+
+    </form>
+</body>
+</html>

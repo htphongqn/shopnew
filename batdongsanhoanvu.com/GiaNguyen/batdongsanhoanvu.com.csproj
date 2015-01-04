@@ -1,0 +1,1029 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91A20496-DA04-4246-9492-3E4EF7F69DB9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CatTrang</RootNamespace>
+    <AssemblyName>CatTrang</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Data.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxTreeList.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.9, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MSCaptcha, Version=4.0.4250.31585, Culture=neutral, PublicKeyToken=b9ff12f28cdcf412, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="vpro.functions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\vpro.functions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\ajax-dynamic-content.js" />
+    <Content Include="ajax\ajax-tooltip.js" />
+    <Content Include="ajax\ajax.js" />
+    <Content Include="ajax\vi-vnToolTip.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\CatTrang.dll" />
+    <Content Include="bin\CatTrang.pdb" />
+    <Content Include="bin\ComponentArt.Web.UI.dll" />
+    <Content Include="bin\Controller.dll" />
+    <Content Include="bin\Controller.pdb" />
+    <Content Include="bin\DevExpress.Data.v12.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxEditors.v12.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxTreeList.v12.1.dll" />
+    <Content Include="bin\DevExpress.Web.v12.1.dll" />
+    <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="bin\Model.dll" />
+    <Content Include="bin\Model.pdb" />
+    <Content Include="bin\MSCaptcha.dll" />
+    <Content Include="bin\vpro.functions.dll" />
+    <Content Include="ch-cn\contactus.aspx" />
+    <Content Include="ch-cn\gallery.aspx" />
+    <Content Include="ch-cn\Home.aspx" />
+    <Content Include="ch-cn\order.aspx" />
+    <Content Include="ch-cn\Page_Default.aspx" />
+    <Content Include="data\aditems\126\thiet-ke-thi-cong-bien-laptop-plaza-cong-ty-nam-a.jpg" />
+    <Content Include="data\aditems\128\thiet-ke-thi-cong-showroom-2.png" />
+    <Content Include="data\aditems\129\thiet_ke_thi_cong_noi_that_nha_pho.jpg" />
+    <Content Include="data\aditems\135\44201462slide2.png" />
+    <Content Include="data\aditems\134\bdg1352079669.jpg" />
+    <Content Include="data\aditems\132\idh1357095236.jpg" />
+    <Content Include="data\aditems\133\oxf1347074662.jpg" />
+    <Content Include="data\configs\22\logo.png" />
+    <Content Include="data\configs\28\logo.png" />
+    <Content Include="data\configs\29\name_company.png" />
+    <Content Include="data\configs\25\Untitled-1.png" />
+    <Content Include="data\contact\contact-vi.htm" />
+    <Content Include="data\news\1124\Thiet ke thi cong noi that showroom.jpg" />
+    <Content Include="data\news\1127\1127-vi.htm" />
+    <Content Include="data\news\1127\17012012002.JPG" />
+    <Content Include="data\news\1128\drff334.jpg" />
+    <Content Include="data\news\1373\1.jpg" />
+    <Content Include="data\news\1373\10.jpg" />
+    <Content Include="data\news\1373\11.jpg" />
+    <Content Include="data\news\1373\2.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-1.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-10.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-11.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-2.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-3.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-4.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-5.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-6.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-7.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-8.jpg" />
+    <Content Include="data\news\1373\200x150-images-san-pham-cua-sat-cua-sat-9.jpg" />
+    <Content Include="data\news\1373\3.jpg" />
+    <Content Include="data\news\1373\4.jpg" />
+    <Content Include="data\news\1373\5.jpg" />
+    <Content Include="data\news\1373\6.jpg" />
+    <Content Include="data\news\1373\7.jpg" />
+    <Content Include="data\news\1373\8.jpg" />
+    <Content Include="data\news\1373\9.jpg" />
+    <Content Include="data\news\1373\dautruyennhiet_800_x_933.jpg" />
+    <Content Include="data\news\1407\11620121825153.png" />
+    <Content Include="data\footer\footer-vi.htm" />
+    <Content Include="data\news\1403\asd.jpg" />
+    <Content Include="data\news\1408\thiet-ke-thi-cong-showroom.jpg" />
+    <Content Include="data\news\1409\1409-vi.htm" />
+    <Content Include="data\news\1409\thiet-ke-thi-cong-showroom-2.png" />
+    <Content Include="default.aspx" />
+    <Content Include="en-us\contactus.aspx" />
+    <Content Include="en-us\gallery.aspx" />
+    <Content Include="en-us\Home.aspx" />
+    <Content Include="en-us\order.aspx" />
+    <Content Include="en-us\Page_Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\arr_cate_child.gif" />
+    <Content Include="Images\arr_l.png" />
+    <Content Include="Images\back_to_top.png" />
+    <Content Include="Images\btn_arr.png" />
+    <Content Include="Images\calendar_icon.jpg" />
+    <Content Include="Images\close_icon.png" />
+    <Content Include="Images\divider2.png" />
+    <Content Include="Images\fancybox\fancybox-x.png" />
+    <Content Include="Images\fancybox\fancybox-y.png" />
+    <Content Include="Images\fancybox\fancybox.png" />
+    <Content Include="Images\fancybox\fancy_close.png" />
+    <Content Include="Images\fancybox\fancy_loading.png" />
+    <Content Include="Images\fancybox\fancy_nav_left.png" />
+    <Content Include="Images\fancybox\fancy_nav_right.png" />
+    <Content Include="Images\fancybox\fancy_shadow_e.png" />
+    <Content Include="Images\fancybox\fancy_shadow_n.png" />
+    <Content Include="Images\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Images\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Images\fancybox\fancy_shadow_s.png" />
+    <Content Include="Images\fancybox\fancy_shadow_se.png" />
+    <Content Include="Images\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Images\fancybox\fancy_shadow_w.png" />
+    <Content Include="Images\fancybox\fancy_title_left.png" />
+    <Content Include="Images\fancybox\fancy_title_main.png" />
+    <Content Include="Images\fancybox\fancy_title_over.png" />
+    <Content Include="Images\fancybox\fancy_title_right.png" />
+    <Content Include="Images\faq.png" />
+    <Content Include="Images\Fonts\arialr_0.svg" />
+    <Content Include="Images\Fonts\Elle Futura-Book.svg" />
+    <Content Include="Images\icons\address_icon.png" />
+    <Content Include="Images\icons\arr_down.png" />
+    <Content Include="Images\icons\china_icon.gif" />
+    <Content Include="Images\icons\download_icon.png" />
+    <Content Include="Images\icons\en_icon.gif" />
+    <Content Include="Images\icons\home_icon.png" />
+    <Content Include="Images\icons\icon_tabmenu.png" />
+    <Content Include="Images\icons\icon_tabmenuactive.png" />
+    <Content Include="Images\icons\ico_square_arrow.gif" />
+    <Content Include="Images\icons\ico_square_arrow_h.gif" />
+    <Content Include="Images\icons\mail_icon.png" />
+    <Content Include="Images\icons\menu-mobile.png" />
+    <Content Include="Images\icons\phone_icon.png" />
+    <Content Include="Images\icons\pico_map.png" />
+    <Content Include="Images\icons\pico_phone.png" />
+    <Content Include="Images\icons\rus_icon.gif" />
+    <Content Include="Images\icons\search_icon.png" />
+    <Content Include="Images\icons\social_icon.png" />
+    <Content Include="Images\icons\sunrise_icon.png" />
+    <Content Include="Images\icons\tree_icon.png" />
+    <Content Include="Images\icons\vn_icon.gif" />
+    <Content Include="Images\jsor\a01.png" />
+    <Content Include="Images\jsor\a02.png" />
+    <Content Include="Images\jsor\a03.png" />
+    <Content Include="Images\jsor\a04.png" />
+    <Content Include="Images\jsor\a06.png" />
+    <Content Include="Images\jsor\a07.png" />
+    <Content Include="Images\jsor\a08.png" />
+    <Content Include="Images\jsor\a09.png" />
+    <Content Include="Images\jsor\a10.png" />
+    <Content Include="Images\jsor\a11.png" />
+    <Content Include="Images\jsor\a12.png" />
+    <Content Include="Images\jsor\a13.png" />
+    <Content Include="Images\jsor\a14.png" />
+    <Content Include="Images\jsor\a15.png" />
+    <Content Include="Images\jsor\a16.png" />
+    <Content Include="Images\jsor\a17.png" />
+    <Content Include="Images\jsor\a18.png" />
+    <Content Include="Images\jsor\a19.png" />
+    <Content Include="Images\jsor\a20.png" />
+    <Content Include="Images\jsor\a21.png" />
+    <Content Include="Images\jsor\b02.png" />
+    <Content Include="Images\jsor\b03.png" />
+    <Content Include="Images\jsor\b05.png" />
+    <Content Include="Images\jsor\b06.png" />
+    <Content Include="Images\jsor\b07.png" />
+    <Content Include="Images\jsor\b10.png" />
+    <Content Include="Images\jsor\b11.png" />
+    <Content Include="Images\jsor\b12.png" />
+    <Content Include="Images\jsor\b13.png" />
+    <Content Include="Images\jsor\b14.png" />
+    <Content Include="Images\jsor\b16.png" />
+    <Content Include="Images\jsor\b17.png" />
+    <Content Include="Images\jsor\b18.png" />
+    <Content Include="Images\jsor\b20.png" />
+    <Content Include="Images\jsor\b21.png" />
+    <Content Include="Images\jsor\back.jpg" />
+    <Content Include="Images\jsor\browser-icons.png" />
+    <Content Include="Images\jsor\close.png" />
+    <Content Include="Images\jsor\Icon-Slider-11-jQuery.png" />
+    <Content Include="Images\jsor\Icon-Slider-11-No-jQuery.png" />
+    <Content Include="Images\jsor\Icon-Slider-12-jQuery.png" />
+    <Content Include="Images\jsor\Icon-Slider-12-No-jQuery.png" />
+    <Content Include="Images\jsor\loading.gif" />
+    <Content Include="Images\jsor\loading2.gif" />
+    <Content Include="Images\jsor\play.png" />
+    <Content Include="Images\jsor\t01.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\maps_HoanVu.jpg" />
+    <Content Include="Images\pattern.png" />
+    <Content Include="Images\project_infoBg.gif" />
+    <Content Include="Images\Send.png" />
+    <Content Include="Images\slide_arr.png" />
+    <Content Include="Images\slide_arr_hotel.gif" />
+    <Content Include="Images\social_network.jpg" />
+    <Content Include="Images\space_menu.gif" />
+    <Content Include="Images\toolbar.png" />
+    <Content Include="Images\views.png" />
+    <Content Include="ru-mo\contactus.aspx" />
+    <Content Include="ru-mo\gallery.aspx" />
+    <Content Include="ru-mo\Home.aspx" />
+    <Content Include="ru-mo\order.aspx" />
+    <Content Include="ru-mo\Page_Default.aspx" />
+    <Content Include="Scripts\all_scripts.js" />
+    <Content Include="Scripts\BeatPicker.min.js" />
+    <Content Include="Scripts\easyResponsiveTabs.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery.carouFredSel.js" />
+    <Content Include="Scripts\jquery.fancybox.js" />
+    <Content Include="Scripts\jquery.masonry.min.js" />
+    <Content Include="Scripts\jquery.slimscroll.js" />
+    <Content Include="Scripts\jssor.js" />
+    <Content Include="Scripts\jssor.slider.js" />
+    <Content Include="Scripts\responsiveslides.min.js" />
+    <Content Include="Scripts\scrolltopcontrol.js" />
+    <Content Include="Styles\BeatPicker.min.css" />
+    <Content Include="Styles\contact.css" />
+    <Content Include="Styles\easy-responsive-tabs.css" />
+    <Content Include="Styles\jquery.fancybox.css" />
+    <Content Include="Styles\jsor.css" />
+    <Content Include="Styles\nav_menu.css" />
+    <Content Include="Styles\responsiveslides.css" />
+    <Content Include="Styles\skeleton.css" />
+    <Content Include="Styles\template_hotel.css" />
+    <Content Include="Styles\toolbar.css" />
+    <Content Include="UIs\carousel_vi.ascx" />
+    <Content Include="UIs\carousel_en.ascx" />
+    <Content Include="UIs\carousel_ru.ascx" />
+    <Content Include="UIs\carousel_ch.ascx" />
+    <Content Include="UIs\news_ch.ascx" />
+    <Content Include="UIs\news_ru.ascx" />
+    <Content Include="UIs\news_en.ascx" />
+    <Content Include="UIs\news_vi.ascx" />
+    <Content Include="UIs\sidebar_ru.ascx" />
+    <Content Include="UIs\sidebar_ch.ascx" />
+    <Content Include="UIs\sidebar_en.ascx" />
+    <Content Include="UIs\search_ru.ascx" />
+    <Content Include="UIs\search_ch.ascx" />
+    <Content Include="UIs\search_en.ascx" />
+    <Content Include="UIs\projectsLeft_ru.ascx" />
+    <Content Include="UIs\projectsLeft_ch.ascx" />
+    <Content Include="UIs\projectsLeft_en.ascx" />
+    <Content Include="UIs\projects_ru.ascx" />
+    <Content Include="UIs\projects_ch.ascx" />
+    <Content Include="UIs\projects_en.ascx" />
+    <Content Include="UIs\project_ru.ascx" />
+    <Content Include="UIs\project_ch.ascx" />
+    <Content Include="UIs\project_en.ascx" />
+    <Content Include="UIs\path_ru.ascx" />
+    <Content Include="UIs\path_ch.ascx" />
+    <Content Include="UIs\new_ch.ascx" />
+    <Content Include="UIs\path_en.ascx" />
+    <Content Include="UIs\new_ru.ascx" />
+    <Content Include="UIs\new_en.ascx" />
+    <Content Include="UIs\menutop_ru.ascx" />
+    <Content Include="UIs\menutop_ch.ascx" />
+    <Content Include="UIs\menutop_en.ascx" />
+    <Content Include="UIs\hotels_ru.ascx" />
+    <Content Include="UIs\hotels_ch.ascx" />
+    <Content Include="UIs\hotels_en.ascx" />
+    <Content Include="UIs\hotel_ru.ascx" />
+    <Content Include="UIs\hotel_ch.ascx" />
+    <Content Include="UIs\hotel_en.ascx" />
+    <Content Include="UIs\header_ru.ascx" />
+    <Content Include="UIs\header_ch.ascx" />
+    <Content Include="UIs\header_en.ascx" />
+    <Content Include="UIs\footer_ch.ascx" />
+    <Content Include="UIs\footer_ru.ascx" />
+    <Content Include="UIs\footer_en.ascx" />
+    <Content Include="UIs\new_vi.ascx" />
+    <Content Include="UIs\footer_vi.ascx" />
+    <Content Include="UIs\header_vi.ascx" />
+    <Content Include="UIs\hotel_vi.ascx" />
+    <Content Include="UIs\hotels_vi.ascx" />
+    <Content Include="UIs\projects_vi.ascx" />
+    <Content Include="UIs\projectsLeft_vi.ascx" />
+    <Content Include="UIs\menutop_vi.ascx" />
+    <Content Include="UIs\path_vi.ascx" />
+    <Content Include="UIs\project_vi.ascx" />
+    <Content Include="UIs\search_vi.ascx" />
+    <Content Include="UIs\sidebar_vi.ascx" />
+    <Content Include="vi-vn\contactus.aspx" />
+    <Content Include="vi-vn\gallery.aspx" />
+    <Content Include="vi-vn\order.aspx" />
+    <Content Include="vi-vn\CImage.aspx" />
+    <Content Include="vi-vn\Home.aspx" />
+    <Content Include="vi-vn\Page_Default.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\vi-vnToolTip.aspx.cs">
+      <DependentUpon>vi-vnToolTip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\vi-vnToolTip.aspx.designer.cs">
+      <DependentUpon>vi-vnToolTip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch-cn\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch-cn\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch-cn\gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch-cn\gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch-cn\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch-cn\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch-cn\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch-cn\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch-cn\Page_Default.aspx.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch-cn\Page_Default.aspx.designer.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\clsFormat.cs" />
+    <Compile Include="Components\Cost.cs" />
+    <Compile Include="Components\OutlookDotComMail.cs" />
+    <Compile Include="Components\Pageindex_chage.cs" />
+    <Compile Include="Components\RandomImage.cs" />
+    <Compile Include="Components\SendMail.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en-us\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en-us\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en-us\gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en-us\gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en-us\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en-us\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en-us\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en-us\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en-us\Page_Default.aspx.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en-us\Page_Default.aspx.designer.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Booking_result.cs" />
+    <Compile Include="Components\SendMail1.cs" />
+    <Compile Include="Master\SiteCh.Master.cs">
+      <DependentUpon>SiteCh.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SiteCh.Master.designer.cs">
+      <DependentUpon>SiteCh.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SiteRu.Master.cs">
+      <DependentUpon>SiteRu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SiteRu.Master.designer.cs">
+      <DependentUpon>SiteRu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SiteEn.Master.cs">
+      <DependentUpon>SiteEn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SiteEn.Master.designer.cs">
+      <DependentUpon>SiteEn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SiteVi.Master.cs">
+      <DependentUpon>SiteVi.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SiteVi.Master.designer.cs">
+      <DependentUpon>SiteVi.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ru-mo\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ru-mo\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ru-mo\gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ru-mo\gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ru-mo\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ru-mo\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ru-mo\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ru-mo\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ru-mo\Page_Default.aspx.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ru-mo\Page_Default.aspx.designer.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\carousel_vi.ascx.cs">
+      <DependentUpon>carousel_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\carousel_vi.ascx.designer.cs">
+      <DependentUpon>carousel_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\carousel_en.ascx.cs">
+      <DependentUpon>carousel_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\carousel_en.ascx.designer.cs">
+      <DependentUpon>carousel_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\carousel_ru.ascx.cs">
+      <DependentUpon>carousel_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\carousel_ru.ascx.designer.cs">
+      <DependentUpon>carousel_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\carousel_ch.ascx.cs">
+      <DependentUpon>carousel_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\carousel_ch.ascx.designer.cs">
+      <DependentUpon>carousel_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\news_ch.ascx.cs">
+      <DependentUpon>news_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\news_ch.ascx.designer.cs">
+      <DependentUpon>news_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\news_ru.ascx.cs">
+      <DependentUpon>news_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\news_ru.ascx.designer.cs">
+      <DependentUpon>news_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\news_en.ascx.cs">
+      <DependentUpon>news_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\news_en.ascx.designer.cs">
+      <DependentUpon>news_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\news_vi.ascx.cs">
+      <DependentUpon>news_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\news_vi.ascx.designer.cs">
+      <DependentUpon>news_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\sidebar_ru.ascx.cs">
+      <DependentUpon>sidebar_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\sidebar_ru.ascx.designer.cs">
+      <DependentUpon>sidebar_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\sidebar_ch.ascx.cs">
+      <DependentUpon>sidebar_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\sidebar_ch.ascx.designer.cs">
+      <DependentUpon>sidebar_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\sidebar_en.ascx.cs">
+      <DependentUpon>sidebar_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\sidebar_en.ascx.designer.cs">
+      <DependentUpon>sidebar_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\search_ru.ascx.cs">
+      <DependentUpon>search_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\search_ru.ascx.designer.cs">
+      <DependentUpon>search_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\search_ch.ascx.cs">
+      <DependentUpon>search_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\search_ch.ascx.designer.cs">
+      <DependentUpon>search_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\search_en.ascx.cs">
+      <DependentUpon>search_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\search_en.ascx.designer.cs">
+      <DependentUpon>search_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_ru.ascx.cs">
+      <DependentUpon>projectsLeft_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_ru.ascx.designer.cs">
+      <DependentUpon>projectsLeft_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_ch.ascx.cs">
+      <DependentUpon>projectsLeft_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_ch.ascx.designer.cs">
+      <DependentUpon>projectsLeft_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_en.ascx.cs">
+      <DependentUpon>projectsLeft_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_en.ascx.designer.cs">
+      <DependentUpon>projectsLeft_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projects_ru.ascx.cs">
+      <DependentUpon>projects_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projects_ru.ascx.designer.cs">
+      <DependentUpon>projects_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projects_ch.ascx.cs">
+      <DependentUpon>projects_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projects_ch.ascx.designer.cs">
+      <DependentUpon>projects_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projects_en.ascx.cs">
+      <DependentUpon>projects_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projects_en.ascx.designer.cs">
+      <DependentUpon>projects_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\project_ru.ascx.cs">
+      <DependentUpon>project_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\project_ru.ascx.designer.cs">
+      <DependentUpon>project_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\project_ch.ascx.cs">
+      <DependentUpon>project_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\project_ch.ascx.designer.cs">
+      <DependentUpon>project_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\project_en.ascx.cs">
+      <DependentUpon>project_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\project_en.ascx.designer.cs">
+      <DependentUpon>project_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\path_ru.ascx.cs">
+      <DependentUpon>path_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\path_ru.ascx.designer.cs">
+      <DependentUpon>path_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\path_ch.ascx.cs">
+      <DependentUpon>path_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\path_ch.ascx.designer.cs">
+      <DependentUpon>path_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\new_ch.ascx.cs">
+      <DependentUpon>new_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\new_ch.ascx.designer.cs">
+      <DependentUpon>new_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\path_en.ascx.cs">
+      <DependentUpon>path_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\path_en.ascx.designer.cs">
+      <DependentUpon>path_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\new_ru.ascx.cs">
+      <DependentUpon>new_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\new_ru.ascx.designer.cs">
+      <DependentUpon>new_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\new_en.ascx.cs">
+      <DependentUpon>new_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\new_en.ascx.designer.cs">
+      <DependentUpon>new_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\menutop_ru.ascx.cs">
+      <DependentUpon>menutop_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\menutop_ru.ascx.designer.cs">
+      <DependentUpon>menutop_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\menutop_ch.ascx.cs">
+      <DependentUpon>menutop_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\menutop_ch.ascx.designer.cs">
+      <DependentUpon>menutop_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\menutop_en.ascx.cs">
+      <DependentUpon>menutop_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\menutop_en.ascx.designer.cs">
+      <DependentUpon>menutop_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotels_ru.ascx.cs">
+      <DependentUpon>hotels_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotels_ru.ascx.designer.cs">
+      <DependentUpon>hotels_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotels_ch.ascx.cs">
+      <DependentUpon>hotels_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotels_ch.ascx.designer.cs">
+      <DependentUpon>hotels_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotels_en.ascx.cs">
+      <DependentUpon>hotels_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotels_en.ascx.designer.cs">
+      <DependentUpon>hotels_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotel_ru.ascx.cs">
+      <DependentUpon>hotel_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotel_ru.ascx.designer.cs">
+      <DependentUpon>hotel_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotel_ch.ascx.cs">
+      <DependentUpon>hotel_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotel_ch.ascx.designer.cs">
+      <DependentUpon>hotel_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotel_en.ascx.cs">
+      <DependentUpon>hotel_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotel_en.ascx.designer.cs">
+      <DependentUpon>hotel_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\header_ru.ascx.cs">
+      <DependentUpon>header_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\header_ru.ascx.designer.cs">
+      <DependentUpon>header_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\header_ch.ascx.cs">
+      <DependentUpon>header_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\header_ch.ascx.designer.cs">
+      <DependentUpon>header_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\header_en.ascx.cs">
+      <DependentUpon>header_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\header_en.ascx.designer.cs">
+      <DependentUpon>header_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\footer_ch.ascx.cs">
+      <DependentUpon>footer_ch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\footer_ch.ascx.designer.cs">
+      <DependentUpon>footer_ch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\footer_ru.ascx.cs">
+      <DependentUpon>footer_ru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\footer_ru.ascx.designer.cs">
+      <DependentUpon>footer_ru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\footer_en.ascx.cs">
+      <DependentUpon>footer_en.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\footer_en.ascx.designer.cs">
+      <DependentUpon>footer_en.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\new_vi.ascx.cs">
+      <DependentUpon>new_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\new_vi.ascx.designer.cs">
+      <DependentUpon>new_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\footer_vi.ascx.cs">
+      <DependentUpon>footer_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\footer_vi.ascx.designer.cs">
+      <DependentUpon>footer_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\header_vi.ascx.cs">
+      <DependentUpon>header_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\header_vi.ascx.designer.cs">
+      <DependentUpon>header_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotel_vi.ascx.cs">
+      <DependentUpon>hotel_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotel_vi.ascx.designer.cs">
+      <DependentUpon>hotel_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotels_vi.ascx.cs">
+      <DependentUpon>hotels_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotels_vi.ascx.designer.cs">
+      <DependentUpon>hotels_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projects_vi.ascx.cs">
+      <DependentUpon>projects_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projects_vi.ascx.designer.cs">
+      <DependentUpon>projects_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_vi.ascx.cs">
+      <DependentUpon>projectsLeft_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\projectsLeft_vi.ascx.designer.cs">
+      <DependentUpon>projectsLeft_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\menutop_vi.ascx.cs">
+      <DependentUpon>menutop_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\menutop_vi.ascx.designer.cs">
+      <DependentUpon>menutop_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\path_vi.ascx.cs">
+      <DependentUpon>path_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\path_vi.ascx.designer.cs">
+      <DependentUpon>path_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\project_vi.ascx.cs">
+      <DependentUpon>project_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\project_vi.ascx.designer.cs">
+      <DependentUpon>project_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\search_vi.ascx.cs">
+      <DependentUpon>search_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\search_vi.ascx.designer.cs">
+      <DependentUpon>search_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\sidebar_vi.ascx.cs">
+      <DependentUpon>sidebar_vi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\sidebar_vi.ascx.designer.cs">
+      <DependentUpon>sidebar_vi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\CImage.aspx.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\CImage.aspx.designer.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Page_Default.aspx.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Page_Default.aspx.designer.cs">
+      <DependentUpon>Page_Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="data\configs\24\" />
+    <Folder Include="data\news\1049\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\ComponentArt.UIFramework.lic" />
+    <None Include="Images\Fonts\arialr_0.eot" />
+    <None Include="Images\Fonts\arialr_0.ttf" />
+    <None Include="Images\Fonts\arialr_0.woff" />
+    <None Include="Images\Fonts\arialr_0.woff2" />
+    <None Include="Images\Fonts\Elle Futura-Book.eot" />
+    <None Include="Images\Fonts\Elle Futura-Book.ttf" />
+    <None Include="Images\Fonts\Elle Futura-Book.woff" />
+    <None Include="Images\Fonts\Elle Futura-Book.woff2" />
+    <None Include="Images\Thumbs.db" />
+    <None Include="Logfiles\Error.log" />
+    <Content Include="Master\SiteVi.Master" />
+    <Content Include="Master\SiteEn.Master" />
+    <Content Include="Master\SiteRu.Master" />
+    <Content Include="Master\SiteCh.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{CE1DABDD-1283-4F83-98FB-AFF7BBFAFFB1}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A559BB6D-EC09-4E9B-88C3-40893DF23721}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11608</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
